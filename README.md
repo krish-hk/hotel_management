@@ -1,60 +1,54 @@
 # 🌟 hotel management 
-This project is a responsive hotel website built using HTML, CSS, and Bootstrap 5.
-It showcases hotel details, facilities, a dynamic image carousel, branch locations, and a navigation bar — everything needed for a basic hotel management frontend.
+This project is a responsive hotel management website created using HTML, CSS, and Bootstrap 5.
+It offers a modern UI showcasing hotel branches, facilities, and a simple booking system.
 
 ✨ Features
-Beautiful Landing Page with welcoming message
+* Responsive Navbar with dropdowns and search bar
+* Animated Image Carousel showcasing hotel interiors
+* About Section with hotel highlights
+* Facilities Section using Bootstrap Alerts
+* Branches Section with Bootstrap Cards (Coimbatore, Chennai, Bangalore)
+* Booking Buttons linked to branch-specific booking pages
+* Modern, Clean UI with a soothing color theme
+* Fixed Top Navigation for easy access
+* Fully mobile-responsive
 
-Image Carousel showcasing hotel interiors
+📂 Project Structure<br><br>
 
-Hotel Facilities Section with stylish alerts
+hotel-management/<br>
+├── index.html             # Main hotel website page<br>
+├── booking-success.html   # Booking success page (with tick mark animation)<br>
+├── booking-coimbatore.htm # Coimbatore branch booking page <br>
+├── booking-chennai.htm    # Chennai branch booking page <br>
+├── booking-bangalore.htm  # Bangalore branch booking page<br>
+├── /images/               # Folder containing hotel and branch images<br>
+├── README.md              # Project documentation<br><br>
 
-Branches Section with Cards (Coimbatore, Chennai, Bangalore)
+🔧 Technologies Used<br><br>
+HTML5<br>
+CSS3<br>
+Bootstrap 5.3.5<br><br>
 
-Responsive Navbar with dropdowns and search bar
+🛠️ How to Run Locally<br>
+Clone the repository:<br>
+git clone https://github.com/your-username/hotel-management.git<br><br>
 
-Modern Styling with a soft, elegant background
+Navigate into the project folder:<br>
+cd hotel-management<br>
+Open index.html with any modern browser.<br><br>
 
-Booking Confirmation Page with animated success tick mark (separate)
+To test booking confirmation, open booking-success.html.<br><br>
 
-📂 Project Structure
-bash
-Copy
-Edit
-hotel-management/
-├── index.html             # Main hotel website page
-├── booking-success.html   # Booking success page with tick animation
-├── /images/               # Folder containing hotel images (carousel & cards)
-├── /css/                  # (Optional) Additional custom styles
-├── README.md              # Project documentation
-🔧 Technologies Used
-HTML5
+📌 To-Do <br>
+Create actual booking forms for each branch<br>
+Connect with a backend server for live booking data<br>
+Add user authentication (Login/Signup)<br>
+Add customer feedback/testimonials section<br>
+SEO optimization for better searchability<br><br>
 
-CSS3
+🧡 Credits<br>
+Made by Pragnya, HAri Krishna, Upasana and Anjana.<br>
+Inspired by Bootstrap’s clean UI framework.<br><br>
 
-Bootstrap 5.3.5
-
-(Optional) JavaScript for Bootstrap components like Carousel & Navbar toggling
-
-📸 Screenshots
-
-Landing Page	Branch Cards	Booking Success
-(Replace path/to/... with your screenshot paths if you add images)
-
-🛠️ How to Run
-Clone the repository
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/hotel-management.git
-Open index.html in any modern browser.
-
-To view booking confirmation, open booking-success.html.
-
-🌸 About
-This project was created to practice and demonstrate UI design skills with Bootstrap.
-It can be extended with backend integration (Node.js, PHP, Django, etc.) to make a complete hotel management system.
-
-📜 License
-This project is open-source and free to use!
+📜 License<br>
+This project is free to use for learning and personal purposes.
