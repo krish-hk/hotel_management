@@ -42,50 +42,31 @@
         <input type="password" id="pass" Name="pass" required><br><br>
         <hr>
 
-
-        <p>Number of days of visit:</p>
-        <label><input type="radio" name="days" value="Less than 1" required> Less than 1</label><br>
-        <label><input type="radio" name="days" value="One day, Two nights" required> One day, Two nights</label><br>
-        <label><input type="radio" name="days" value="3 days" required> 3 days</label><br>
-        <label><input type="radio" name="days" value="Less than 5 days" required> Less than 5 days</label><br>
-        <label><input type="radio" name="days" value="Weekly" required> Weekly</label>
+        <label for="rooms">Number of rooms:</label>
+        <input type="text" id="rooms" name="rooms">
         <hr>
-
-        <p class="mt-3">Number of people visiting:</p>
-        <label><input type="radio" name="people" value="1" required> 1</label><br>
-        <label><input type="radio" name="people" value="2" required> 2</label><br>
-        <label><input type="radio" name="people" value="3 or 3+" required> 3 or 3+</label><br>
-        <label><input type="radio" name="people" value="Less than 7" required> Less than 7</label><br>
-        <label><input type="radio" name="people" value="More than 10" required> More or 10+</label>
-        <hr>
-
-        <p class="mt-3">Vehicles accompanying (Optional):</p>
-        <label><input type="checkbox" name="vehicle1" value="Bike" > Bike / Scooter</label><br>
-        <label><input type="checkbox" name="vehicle2" value="Car" > Car</label><br>
-        <label><input type="checkbox" name="vehicle3" value="Bus" > Traveller / Bus</label><br><br>
-        <hr>
+        
         <label for="fromDate">From Date:</label>
         <input type="date" id="fromDate" name="fromDate" required class="form-control mb-3">
 
         <label for="tillDate">Till Date:</label>
         <input type="date" id="tillDate" name="tillDate" required class="form-control mb-3">
 
-        <label for="visitMonth">Month of Visit:</label>
-        <select id="visitMonth" name="visitMonth" required class="form-control mb-3">
+        <label for="RoomType">Type of Room:</label>
+        <select id="RoomType" name="RoomType" required class="form-control mb-3">
           <option value="">-- Select Month --</option>
-          <option value="January">January</option>
-          <option value="February">February</option>
-          <option value="March">March</option>
-          <option value="April">April</option>
-          <option value="May">May</option>
-          <option value="June">June</option>
-          <option value="July">July</option>
-          <option value="August">August</option>
-          <option value="September">September</option>
-          <option value="October">October</option>
-          <option value="November">November</option>
-          <option value="December">December</option>
+          <option value="Single">Single Room</option>
+          <option value="Double">Double Room</option>
+          <option value="Twin">Twin Room</option>
+          <option value="Deluxe">Deluxe Room</option>
+          <option value="Suite">Suite</option>
         </select>
+        <hr>
+
+        <p class="mt-3">Vehicles accompanying (Optional):</p>
+        <label><input type="checkbox" name="vehicle1" value="Bike" > Bike / Scooter</label><br>
+        <label><input type="checkbox" name="vehicle2" value="Car" > Car</label><br>
+        <label><input type="checkbox" name="vehicle3" value="Bus" > Traveller / Bus</label><br><br>
         <hr>
 
         <p>Extra details and arrangements will be taken care of during check-in. Thank You!!!</p>
