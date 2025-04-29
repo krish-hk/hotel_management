@@ -2,6 +2,8 @@
 This project is a responsive hotel management website created using HTML, CSS, and Bootstrap 5.
 It offers a modern UI showcasing hotel branches, facilities, and a simple booking system.
 
+visit site at: https://krish-hk.github.io/hotel_management/
+
 ✨ Features
 * Responsive Navbar with dropdowns and search bar
 * Animated Image Carousel showcasing hotel interiors
