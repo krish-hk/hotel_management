@@ -33,6 +33,24 @@
         html {
           scroll-behavior: smooth;
         }
+       .fade-in-section {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-out, transform 1s ease-out;
+          will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+          opacity: 1;
+          transform: none;
+        }
+
+         @media (max-width: 576px) {
+      .booking-form {
+        padding: 15px;
+        border-radius: 10px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -43,6 +61,11 @@
     <br>
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Deluxe Room</h5>
+        <p>Comfort and luxury combined.</p>
+      </div>
+
         <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="https://github.com/krish-hk/hotel_management/raw/main/hotel1.jpg" >
@@ -193,6 +216,8 @@
         </div>
       </nav>
       <br>
+
+     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -253,6 +278,43 @@
           </div>
         </div>
       </section>
-    </footer>    
+    </footer>  
+    
+    <script src="script.js"></script>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content" id="bookingForm">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Your Stay</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <input type="hidden" id="branchName" name="branchName" />
+          <div class="mb-3">
+            <label for="guestName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="guestName" required>
+          </div>
+          <div class="mb-3">
+            <label for="guestEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="guestEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkIn" class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="checkIn" required>
+          </div>
+          <div class="mb-3">
+            <label for="checkOut" class="form-label">Check-out Date</label>
+            <input type="date" class="form-control" id="checkOut" required>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
   </body>
 </html>
