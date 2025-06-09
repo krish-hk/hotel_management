@@ -88,7 +88,7 @@
         <p>Extra details and arrangements will be taken care of during check-in. Thank You!!!</p>
 
 
-        <input type="submit" value="Submit" class="btn btn-outline-primary"><br><br><br><br>
+        <input type="submit" id="btn" value="Submit" class="btn">
       </form>
     </div>
   </div>
@@ -98,8 +98,7 @@
     const form = document.querySelector("form");
 
     form.addEventListener("submit", function (event) {
-      // Prevent actual submission first
-      event.preventDefault();
+      event.preventDefault(); // prevent default submission
 
       const fname = document.getElementById("fname").value.trim();
       const lname = document.getElementById("lname").value.trim();
@@ -110,13 +109,9 @@
       const tillDate = document.getElementById("tillDate").value;
       const roomType = document.getElementById("RoomType").value;
 
-      // Password validation
       const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
 
-      if (
-        !fname || !lname || !email || !password || !rooms ||
-        !fromDate || !tillDate || !roomType
-      ) {
+      if (!fname || !lname || !email || !password || !rooms || !fromDate || !tillDate || !roomType) {
         alert("Please fill in all required fields.");
         return;
       }
@@ -125,10 +120,13 @@
         alert("Password must be at least 8 characters long, include at least one digit and one uppercase letter.");
         return;
       }
+
+      // if all validations pass
       form.submit();
     });
   });
 </script>
+
 
 </body>
 </html>
