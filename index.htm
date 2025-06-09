@@ -114,7 +114,7 @@
             <h5 class="card-title">Coimbatore</h5>
             <p class="card-text">Right below the mountains, perfect to connect with nature.</p>
             <a href="booking-coimbatore.htm" target="_blank">
-              <button class="btn btn-primary">Book Now</button>
+              <button class="btn">Book Now</button>
             </a>          
           </div>
         </div>
@@ -125,7 +125,7 @@
             <h5 class="card-title">Chennai</h5>
             <p class="card-text">An experiance to stay in the midst of art, music, and culture.</p>
             <a href="booking-chennai.htm" target="_blank">
-              <button class="btn btn-primary">Book Now</button>
+              <button class="btn">Book Now</button>
             </a>
           </div>
         </div>
@@ -136,7 +136,7 @@
             <h5 class="card-title">Bangalore</h5>
             <p class="card-text">City lights and hustle bustle, a stay in the Indian Silicon Valley.</p>
             <a href="booking-bangalore.htm" target="_blank">
-              <button class="btn btn-primary">Book Now</button>
+              <button class="btn">Book Now</button>
             </a>
           </div>
         </div>
@@ -243,15 +243,16 @@
     
     <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const bookButtons = document.querySelectorAll("a[href^='booking-'] button");
+    const bookButtons = document.querySelectorAll(".btn");
 
     bookButtons.forEach((button) => {
-      button.addEventListener("click", function (e) {
+      button.addEventListener("click", function () {
         alert("Redirecting to booking page...");
       });
     });
   });
 </script>
+
 
   </body>
 </html>
