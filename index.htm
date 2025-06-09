@@ -239,6 +239,19 @@
           </div>
         </div>
       </section>
-    </footer>    
+    </footer> 
+    
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const bookButtons = document.querySelectorAll("a[href^='booking-'] button");
+
+    bookButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        alert("Redirecting to booking page...");
+      });
+    });
+  });
+</script>
+
   </body>
 </html>
