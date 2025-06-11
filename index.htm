@@ -33,6 +33,21 @@
         html {
           scroll-behavior: smooth;
         }
+
+      .feature-block {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-block:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
     </style>
   </head>
   <body>
@@ -78,27 +93,72 @@
     <h4 style="color: rgb(5, 55, 78); text-align: center;"> Availability and Facilities:</h4>
     <br>
 
-    <div class="d-flex flex-column align-items-center">
-    <div class="alert alert-secondary feature-block" role="alert">
-      Spacious deluxe and standard rooms available for booking.
-    </div>
-    <div class="alert alert-success feature-block" role="alert">
-      24/7 front desk and room service to assist you anytime.
-    </div>
-    <div class="alert alert-danger feature-block" role="alert">
-      Relax and unwind in our cozy guest lounge.
-    </div>
-    <div class="alert alert-warning feature-block" role="alert">
-      Enjoy indoor and outdoor dining spaces with a curated menu.
-    </div>
-    <div class="alert alert-info feature-block" role="alert">
-      Multi-cuisine restaurant serving breakfast, lunch, and dinner.
-    </div>
-    <div class="alert alert-light feature-block" role="alert">
-      Private dining and group reservations available.
-    </div>
-    <div class="alert alert-primary feature-block" role="alert">
-      Free Wi-Fi, ample parking, and daily housekeeping included.
+    <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <div class="feature-card bg-light">
+          <img src="https://via.placeholder.com/600x400?text=Deluxe+Room" alt="Deluxe Room">
+          <div class="feature-card-body">
+            <p>Spacious deluxe and standard rooms available for booking.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-success text-white">
+          <img src="https://via.placeholder.com/600x400?text=Room+Service" alt="Room Service">
+          <div class="feature-card-body">
+            <p>24/7 front desk and room service to assist you anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-danger text-white">
+          <img src="https://via.placeholder.com/600x400?text=Guest+Lounge" alt="Guest Lounge">
+          <div class="feature-card-body">
+            <p>Relax and unwind in our cozy guest lounge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-warning">
+          <img src="https://via.placeholder.com/600x400?text=Dining+Area" alt="Dining Area">
+          <div class="feature-card-body">
+            <p>Enjoy indoor and outdoor dining spaces with a curated menu.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-info text-white">
+          <img src="https://via.placeholder.com/600x400?text=Restaurant" alt="Restaurant">
+          <div class="feature-card-body">
+            <p>Multi-cuisine restaurant serving breakfast, lunch, and dinner.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-light">
+          <img src="https://via.placeholder.com/600x400?text=Private+Dining" alt="Private Dining">
+          <div class="feature-card-body">
+            <p>Private dining and group reservations available.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="feature-card bg-primary text-white">
+          <img src="https://via.placeholder.com/600x400?text=Amenities" alt="Amenities">
+          <div class="feature-card-body">
+            <p>Free Wi-Fi, ample parking, and daily housekeeping included.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
