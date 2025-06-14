@@ -17,17 +17,22 @@
       backdrop-filter: blur(3px);
     }
     .back-btn-container {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-    }
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* adds a light background */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optional: adds a nice shadow */
+}
+
   </style>
 </head>
 <body>
   <div class="back-btn-container">
-    <a href="index.htm"><button class="btn btn-info">← Back to Home</button></a>
+  <button class="btn btn-info fw-bold shadow">← Back to Home</button>
   </div>
 
   <div class="container mt-5">
