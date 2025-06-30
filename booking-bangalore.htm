@@ -82,38 +82,5 @@
     </div>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("bookingForm");
-
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const fname = document.getElementById("fname").value.trim();
-        const lname = document.getElementById("lname").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("pass").value;
-        const rooms = document.getElementById("rooms").value.trim();
-        const fromDate = document.getElementById("fromDate").value;
-        const tillDate = document.getElementById("tillDate").value;
-        const roomType = document.getElementById("RoomType").value;
-
-        const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
-
-        if (!fname || !lname || !email || !password || !rooms || !fromDate || !tillDate || !roomType) {
-          alert("Please fill in all required fields.");
-          return;
-        }
-
-        if (!passwordRegex.test(password)) {
-          alert("Password must be at least 8 characters long, include at least one digit and one uppercase letter.");
-          return;
-        }
-
-        alert("Booking successful! Redirecting...");
-        window.open("final_page.htm", "_blank");
-      });
-    });
-  </script>
 </body>
 </html>
